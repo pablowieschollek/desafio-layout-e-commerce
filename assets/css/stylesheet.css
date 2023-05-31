@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(100, 0, 131);
+    color: rgb(240, 189, 255);
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+    }
+
+    menu {
+    grid-area: asidebar;
+    background-color: rgb(245, 213, 127);
+    display: flex;
+     align-items: left;
+    flex-direction: column;
+    width: 9em;
+    min-height: 100vh;
+    padding: 5%;
+    color: rgb(71, 52, 0);
+                
+    }
+    main {
+    grid-area: main;
+    background-color: white;
+    }
+
+    .grid-container {
+        display: grid;
+grid-template-columns: auto auto auto;
+gap: 10px;
+        }
+
+        .card {
+            margin: 1em;
+            height: 300px;
+            width: 250px;
+        }
+
+        .producto {
+
+            height: 250px;
+            width: 200px;
+            object-fit: fill;
+        }
+
+        .precio {
+
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        } 
+
+        .dinero {
+            font-family: 'Concert One', cursive;
+            font-size: 16px;
+        }
+
+
+
+        .card-header {
+            background-color: rgb(186, 143, 255);
+            color: rgb(24, 0, 63) ;
+            height: 20px;
+            text-align: center;
+            font-family: 'Concert One', cursive;
+            font-size: 18px;
+
+        }
+
+        .card-footer {
+            background-color: rgb(206, 181, 247);
+            color: rgb(23, 0, 59) ;
+            height: 25px;
+            text-align: center;
+            justify-content: center;
+            font-family: 'Concert One', cursive;
+            font-size: 21px;
+
+        }
+
+    footer {
+    grid-area: footer;
+    background-color: rgb(206, 181, 247);
+    color: rgb(44, 0, 116) ;
+    height: 45px;
+    text-align: center;
+    }
+
+    .container {
+        display: grid;
+        grid-template-areas:
+        "header header"
+        "asidebar main"
+        "footer footer";
+        
+    }
